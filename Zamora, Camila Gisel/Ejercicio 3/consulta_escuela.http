@@ -1,0 +1,76 @@
+@url = http://localhost:3000
+
+### Hola mundo!
+GET {{url}}
+
+### Materias
+### Obtener todas las materias
+GET {{url}}/materias
+
+### Crear una materia
+POST {{url}}/materias
+Content-Type: application/json
+
+{
+    "nombre": "Educacion Plastica, osea zurdismo"
+}
+
+### Actualizar una materia
+PUT {{url}}/materias/5
+Content-Type: application/json
+
+{
+    "nombre": "Arte Contemporaneo, osea zurdismo avanzado"
+}
+
+### Eliminar una materia
+DELETE {{url}}/materias/5
+
+
+### Alumnos
+### Obtener todos los alumnos
+GET {{url}}/alumnos
+
+### Obtener un alumno por ID
+GET {{url}}/alumnos/1
+
+### Crear un alumno
+POST {{url}}/alumnos
+Content-Type: application/json
+
+{
+    "nombre": "Miriam"
+}
+
+### Actualizar un alumno
+PUT {{url}}/alumnos/4
+Content-Type: application/json
+
+{
+    "nombre": "Pedro"
+}
+
+### Eliminar un alumno
+DELETE {{url}}/alumnos/4
+
+### Inscribir un alumno en una materia
+POST {{url}}/alumnos/inscripcion
+Content-Type: application/json
+
+{
+    "alumno_id": 1,
+    "alumnosmaterias_id": 3,
+    "nota1": 8,
+    "nota2": 7,
+    "nota3": 9
+}
+
+### Actualizar las notas de un alumno en una materia
+PUT {{url}}/alumnos/notas/2
+Content-Type: application/json
+
+{
+    "nota1": 10,
+    "nota2": 8,
+    "nota3": 10
+}
