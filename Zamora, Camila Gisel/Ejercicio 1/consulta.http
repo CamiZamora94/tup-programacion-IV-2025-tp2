@@ -1,0 +1,10 @@
+GET  http://localhost:3000/rectangulos
+
+###
+POST http://localhost:3000/rectangulos
+Content-Type: application/json
+
+{
+    "lado1": -8,
+    "lado2": 7
+}
