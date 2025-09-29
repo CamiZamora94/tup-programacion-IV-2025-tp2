@@ -12,7 +12,7 @@ POST {{url}}/materias
 Content-Type: application/json
 
 {
-    "nombre": "Educacion Plastica, osea zurdismo"
+    "nombre": "Matematicas"
 }
 
 ### Actualizar una materia
@@ -20,7 +20,7 @@ PUT {{url}}/materias/5
 Content-Type: application/json
 
 {
-    "nombre": "Arte Contemporaneo, osea zurdismo avanzado"
+    "nombre": "Literatura"
 }
 
 ### Eliminar una materia
@@ -58,11 +58,11 @@ POST {{url}}/alumnos/inscripcion
 Content-Type: application/json
 
 {
-    "alumno_id": 1,
-    "alumnosmaterias_id": 3,
-    "nota1": 8,
-    "nota2": 7,
-    "nota3": 9
+    "alumno_id": 5,
+    "alumnosmaterias_id": 6,
+    "nota1": 9,
+    "nota2": 9,
+    "nota3": 8
 }
 
 ### Actualizar las notas de un alumno en una materia
@@ -70,7 +70,7 @@ PUT {{url}}/alumnos/notas/2
 Content-Type: application/json
 
 {
-    "nota1": 10,
-    "nota2": 8,
-    "nota3": 10
+    "nota1": 9,
+    "nota2": 7,
+    "nota3": 7
 }
